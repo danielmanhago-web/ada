@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <clipPath id="dome">
+      <path d="M190,432 C180,290 240,210 310,210 C380,210 420,260 430,320 C470,340 510,380 525,450 C505,452 495,450 485,445 C470,400 445,380 412,372 L410,432 Z"/>
+    </clipPath>
+    <clipPath id="punho">
+      <rect x="180" y="425" width="240" height="95" rx="10"/>
+    </clipPath>
+    <clipPath id="cabeca">
+      <ellipse cx="900" cy="290" rx="115" ry="145"/>
+    </clipPath>
+    <clipPath id="gola">
+      <path d="M790,560 L1010,560 L985,420 L815,420 Z"/>
+    </clipPath>
+    <pattern id="canelado" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#151515"/>
+      <rect width="2" height="10" fill="#202020"/>
+    </pattern>
+    <pattern id="canelado-verde" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#22B35E"/>
+      <rect width="3" height="12" fill="#1A8F4A"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="720" fill="#FFFFFF"/>
+  <text x="600" y="60" text-anchor="middle" font-size="28" font-weight="700" fill="#151515">Atlética · Intermed — mockup de referência</text>
+  <text x="600" y="92" text-anchor="middle" font-size="16" fill="#555">Malha fina e respirável · preto #151515 + verde #22B35E</text>
+
+  <!-- Produto 1: touca comprida -->
+  <g>
+    <g clip-path="url(#dome)">
+      <rect x="170" y="200" width="370" height="260" fill="url(#canelado)"/>
+      <!-- listra fina em volta da cúpula -->
+      <path d="M180,362 C260,346 350,346 440,366" stroke="#22B35E" stroke-width="10" fill="none"/>
+      <!-- listra na ponta caída -->
+      <path d="M470,428 L530,410" stroke="#22B35E" stroke-width="8" fill="none"/>
+    </g>
+    <g clip-path="url(#punho)">
+      <rect x="180" y="425" width="240" height="95" fill="url(#canelado-verde)"/>
+    </g>
+    <rect x="252" y="447" width="96" height="52" rx="6" fill="#151515"/>
+    <text x="300" y="478" text-anchor="middle" font-size="14" fill="#FFFFFF">Seu logo</text>
+    <text x="330" y="590" text-anchor="middle" font-size="22" font-weight="700" fill="#151515">Touca comprida</text>
+    <text x="330" y="618" text-anchor="middle" font-size="15" fill="#555">Canelada, ponta caída, aba verde</text>
+  </g>
+
+  <!-- Produto 2: balaclava -->
+  <g>
+    <g clip-path="url(#gola)">
+      <rect x="780" y="420" width="240" height="140" fill="url(#canelado)"/>
+      <rect x="780" y="544" width="240" height="10" fill="#22B35E"/>
+    </g>
+    <rect x="835" y="380" width="130" height="60" fill="#151515"/>
+    <g clip-path="url(#cabeca)">
+      <rect x="780" y="140" width="240" height="300" fill="url(#canelado)"/>
+      <rect x="780" y="200" width="240" height="22" fill="#22B35E"/>
+    </g>
+    <ellipse cx="900" cy="315" rx="60" ry="80" fill="#EFEFEF" stroke="#0B0B0B" stroke-width="5"/>
+    <rect x="858" y="470" width="84" height="46" rx="6" fill="#22B35E"/>
+    <text x="900" y="498" text-anchor="middle" font-size="14" fill="#151515">Seu logo</text>
+    <text x="900" y="590" text-anchor="middle" font-size="22" font-weight="700" fill="#151515">Balaclava</text>
+    <text x="900" y="618" text-anchor="middle" font-size="15" fill="#555">Gola alta, abertura oval, faixa na testa</text>
+  </g>
+
+  <!-- Paleta -->
+  <rect x="470" y="660" width="28" height="28" rx="4" fill="#151515"/>
+  <text x="506" y="680" font-size="15" fill="#151515">#151515 base</text>
+  <rect x="630" y="660" width="28" height="28" rx="4" fill="#22B35E"/>
+  <text x="666" y="680" font-size="15" fill="#151515">#22B35E detalhes</text>
+</svg>

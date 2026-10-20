@@ -1,10 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 640" width="1200" height="640">
   <defs>
+    <!-- Símbolo: cocar estilizado (leque de penas) sobre faixa de grafismo -->
+    <g id="pena">
+      <path fill-rule="evenodd" d="M-2.5,-2 L-7,-14 L-8.5,-25 L-3.5,-28 L-8.5,-31 L-8,-42 L-4,-52 L0,-58 L4,-52 L8,-42 L8.5,-31 L3.5,-28 L8.5,-25 L7,-14 L2.5,-2 Z M-0.8,-4 L-0.8,-50 L0.8,-50 L0.8,-4 Z"/>
+    </g>
+    <symbol id="simbolo" viewBox="-10 -14 120 80">
+        <use href="#pena" transform="translate(20.0,54.0) rotate(-48)"/>
+        <use href="#pena" transform="translate(30.0,51.8) rotate(-32)"/>
+        <use href="#pena" transform="translate(40.0,50.4) rotate(-16)"/>
+        <use href="#pena" transform="translate(50.0,50.0) rotate(0)"/>
+        <use href="#pena" transform="translate(60.0,50.4) rotate(16)"/>
+        <use href="#pena" transform="translate(70.0,51.8) rotate(32)"/>
+        <use href="#pena" transform="translate(80.0,54.0) rotate(48)"/>
+      <path fill-rule="evenodd" d="M14,50 Q50,44 86,50 L86,63 Q50,57 14,63 Z M28,56 L32,53 L36,56 L32,59 Z M46,54.5 L50,51.5 L54,54.5 L50,57.5 Z M64,56 L68,53 L72,56 L68,59 Z"/>
+    </symbol>
+    <!-- Grafismo: dentes de serra -->
+    <pattern id="serra" width="16" height="22" patternUnits="userSpaceOnUse">
+      <rect width="16" height="22" fill="#22B35E"/>
+      <path d="M0,22 L8,9 L16,22 Z" fill="#151515"/>
+    </pattern>
     <clipPath id="dome">
       <path d="M190,432 C180,290 240,210 310,210 C380,210 420,260 430,320 C470,340 510,380 525,450 C505,452 495,450 485,445 C470,400 445,380 412,372 L410,432 Z"/>
-    </clipPath>
-    <clipPath id="punho">
-      <rect x="180" y="425" width="240" height="95" rx="10"/>
     </clipPath>
     <clipPath id="cabeca">
       <ellipse cx="900" cy="290" rx="115" ry="145"/>
@@ -12,59 +28,48 @@
     <clipPath id="gola">
       <path d="M790,560 L1010,560 L985,420 L815,420 Z"/>
     </clipPath>
-    <pattern id="canelado" width="10" height="10" patternUnits="userSpaceOnUse">
-      <rect width="10" height="10" fill="#151515"/>
-      <rect width="2" height="10" fill="#202020"/>
-    </pattern>
-    <pattern id="canelado-verde" width="12" height="12" patternUnits="userSpaceOnUse">
-      <rect width="12" height="12" fill="#22B35E"/>
-      <rect width="3" height="12" fill="#1A8F4A"/>
-    </pattern>
   </defs>
 
-  <rect width="1200" height="720" fill="#FFFFFF"/>
-  <text x="600" y="60" text-anchor="middle" font-size="28" font-weight="700" fill="#151515">Atlética · Intermed — mockup de referência</text>
-  <text x="600" y="92" text-anchor="middle" font-size="16" fill="#555">Malha fina e respirável · preto #151515 + verde #22B35E</text>
+  <rect width="1200" height="640" fill="#FFFFFF"/>
 
-  <!-- Produto 1: touca comprida -->
-  <g>
+  <!-- Produto 1: touca comprida (ilustração flat) -->
+  <g stroke-linejoin="round">
+    <path d="M190,432 C180,290 240,210 310,210 C380,210 420,260 430,320 C470,340 510,380 525,450 C505,452 495,450 485,445 C470,400 445,380 412,372 L410,432 Z" fill="#151515"/>
     <g clip-path="url(#dome)">
-      <rect x="170" y="200" width="370" height="260" fill="url(#canelado)"/>
-      <!-- listra fina em volta da cúpula -->
-      <path d="M180,362 C260,346 350,346 440,366" stroke="#22B35E" stroke-width="10" fill="none"/>
-      <!-- listra na ponta caída -->
-      <path d="M470,428 L530,410" stroke="#22B35E" stroke-width="8" fill="none"/>
+      <path d="M180,362 C260,346 350,346 440,366" stroke="#22B35E" stroke-width="12" fill="none"/>
+      <path d="M470,428 L530,410" stroke="#22B35E" stroke-width="10" fill="none"/>
+      <path d="M238,260 C250,240 270,228 292,224" stroke="#3A3A3A" stroke-width="8" stroke-linecap="round" fill="none"/>
     </g>
-    <g clip-path="url(#punho)">
-      <rect x="180" y="425" width="240" height="95" fill="url(#canelado-verde)"/>
+    <path d="M190,432 C180,290 240,210 310,210 C380,210 420,260 430,320 C470,340 510,380 525,450 C505,452 495,450 485,445 C470,400 445,380 412,372 L410,432 Z" fill="none" stroke="#0B0B0B" stroke-width="5"/>
+    <rect x="180" y="425" width="240" height="95" rx="12" fill="#22B35E" stroke="#0B0B0B" stroke-width="5"/>
+    <g stroke="#1A8F4A" stroke-width="4">
+      <line x1="200" y1="432" x2="200" y2="513"/><line x1="222" y1="432" x2="222" y2="513"/>
+      <line x1="378" y1="432" x2="378" y2="513"/><line x1="400" y1="432" x2="400" y2="513"/>
     </g>
-    <rect x="252" y="447" width="96" height="52" rx="6" fill="#151515"/>
-    <text x="300" y="478" text-anchor="middle" font-size="14" fill="#FFFFFF">Seu logo</text>
-    <text x="330" y="590" text-anchor="middle" font-size="22" font-weight="700" fill="#151515">Touca comprida</text>
-    <text x="330" y="618" text-anchor="middle" font-size="15" fill="#555">Canelada, ponta caída, aba verde</text>
+    <rect x="250" y="443" width="100" height="60" rx="8" fill="#151515" stroke="#0B0B0B" stroke-width="3"/>
+    <use href="#simbolo" x="258" y="445" width="84" height="56" fill="#22B35E"/>
   </g>
 
-  <!-- Produto 2: balaclava -->
-  <g>
+  <!-- Produto 2: balaclava (ilustração flat) -->
+  <g stroke-linejoin="round">
+    <path d="M790,560 L1010,560 L985,420 L815,420 Z" fill="#151515" stroke="#0B0B0B" stroke-width="5"/>
     <g clip-path="url(#gola)">
-      <rect x="780" y="420" width="240" height="140" fill="url(#canelado)"/>
-      <rect x="780" y="544" width="240" height="10" fill="#22B35E"/>
+      <rect x="780" y="540" width="240" height="12" fill="#22B35E"/>
     </g>
     <rect x="835" y="380" width="130" height="60" fill="#151515"/>
+    <ellipse cx="900" cy="290" rx="115" ry="145" fill="#151515"/>
     <g clip-path="url(#cabeca)">
-      <rect x="780" y="140" width="240" height="300" fill="url(#canelado)"/>
-      <rect x="780" y="200" width="240" height="22" fill="#22B35E"/>
+      <rect x="780" y="198" width="240" height="22" fill="url(#serra)"/>
+      <rect x="780" y="220" width="240" height="6" fill="#22B35E"/>
+      <path d="M830,180 C845,160 870,152 892,150" stroke="#3A3A3A" stroke-width="8" stroke-linecap="round" fill="none"/>
     </g>
-    <ellipse cx="900" cy="315" rx="60" ry="80" fill="#EFEFEF" stroke="#0B0B0B" stroke-width="5"/>
-    <rect x="858" y="470" width="84" height="46" rx="6" fill="#22B35E"/>
-    <text x="900" y="498" text-anchor="middle" font-size="14" fill="#151515">Seu logo</text>
-    <text x="900" y="590" text-anchor="middle" font-size="22" font-weight="700" fill="#151515">Balaclava</text>
-    <text x="900" y="618" text-anchor="middle" font-size="15" fill="#555">Gola alta, abertura oval, faixa na testa</text>
+    <ellipse cx="900" cy="290" rx="115" ry="145" fill="none" stroke="#0B0B0B" stroke-width="5"/>
+    <ellipse cx="900" cy="318" rx="60" ry="80" fill="#EFEFEF" stroke="#0B0B0B" stroke-width="5"/>
+    <rect x="852" y="462" width="96" height="58" rx="8" fill="#22B35E" stroke="#0B0B0B" stroke-width="3"/>
+    <use href="#simbolo" x="860" y="464" width="80" height="54" fill="#151515"/>
   </g>
 
-  <!-- Paleta -->
-  <rect x="470" y="660" width="28" height="28" rx="4" fill="#151515"/>
-  <text x="506" y="680" font-size="15" fill="#151515">#151515 base</text>
-  <rect x="630" y="660" width="28" height="28" rx="4" fill="#22B35E"/>
-  <text x="666" y="680" font-size="15" fill="#151515">#22B35E detalhes</text>
+  <!-- Paleta (sem texto) -->
+  <rect x="556" y="590" width="36" height="36" rx="6" fill="#151515"/>
+  <rect x="608" y="590" width="36" height="36" rx="6" fill="#22B35E"/>
 </svg>
